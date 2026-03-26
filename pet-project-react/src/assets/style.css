@@ -1,0 +1,8 @@
+/* Style.css - General Styles */
+/* Note: Most unified styles are now in index.css and component-specific CSS files */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}

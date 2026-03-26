@@ -1,0 +1,168 @@
+/* Screening.css - Screening Page Styles */
+
+.screening-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 40px 30px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Header */
+.screening-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* Form - Vertical layout */
+.screening-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Form Group */
+.screening-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.screening-form .form-group label {
+  font-weight: 600;
+  color: #333;
+  font-size: 1rem;
+}
+
+/* Form Section */
+.screening-form .form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.screening-form .form-section h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #4a90d9;
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #4a90d9;
+}
+
+/* Input, Select, Textarea */
+.screening-form input[type="text"],
+.screening-form input[type="email"],
+.screening-form input[type="number"],
+.screening-form select,
+.screening-form textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.screening-form input::placeholder,
+.screening-form textarea::placeholder {
+  color: #999;
+}
+
+.screening-form input:focus,
+.screening-form select:focus,
+.screening-form textarea:focus {
+  outline: none;
+  border-color: #4a90d9;
+  box-shadow: 0 0 0 3px rgba(74, 144, 217, 0.15);
+}
+
+/* Textarea */
+.screening-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Select */
+.screening-form select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 15px top 50%;
+  background-size: 12px auto;
+}
+
+/* Agreement */
+.screening-form .agreement {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.screening-form .agreement label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #333;
+}
+
+.screening-form .agreement input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #4a90d9;
+}
+
+/* Submit Button */
+.screening-form button[type="submit"] {
+  padding: 16px;
+  background: #4a90d9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.screening-form button[type="submit"]:hover {
+  background: #357abd;
+}
+
+/* Responsive - Single column on mobile */
+@media (max-width: 768px) {
+  .screening-container {
+    padding: 20px 15px;
+    max-width: 100%;
+  }
+  
+  .screening-form {
+    padding: 25px;
+  }
+  
+  .screening-container h2 {
+    font-size: 1.6rem;
+  }
+}
+

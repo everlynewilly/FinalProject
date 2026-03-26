@@ -1,0 +1,4 @@
+DirectoryIndex index.php index.html
+# Simplified - Serve files directly, no rewrite for API
+RewriteEngine Off
+

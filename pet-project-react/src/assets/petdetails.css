@@ -1,0 +1,228 @@
+/* Pet Details Component Styles */
+/* Using unified color scheme from index.css */
+
+.pet-details-container {
+  width: 100%;
+  padding: 2rem;
+  min-height: calc(100vh - 200px);
+}
+
+.pet-details-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.back-link:hover {
+  color: var(--primary-dark);
+}
+
+.pet-details-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  background: white;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.pet-details-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.pet-details-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  min-height: 400px;
+  max-height: 500px;
+  background-color: var(--bg-light);
+}
+
+.pet-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.pet-details-info {
+  padding: 2rem;
+}
+
+.pet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.pet-header h1 {
+  margin: 0;
+  color: var(--neutral-dark);
+  font-size: 2rem;
+}
+
+.adoption-fee {
+  background: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+}
+
+.pet-quick-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-item .label {
+  font-size: 0.85rem;
+  color: var(--neutral-medium);
+  margin-bottom: 0.25rem;
+}
+
+.info-item .value {
+  font-weight: 500;
+  color: var(--neutral-dark);
+}
+
+.pet-description,
+.pet-temperament,
+.pet-health {
+  margin-bottom: 1.5rem;
+}
+
+.pet-description h3,
+.pet-temperament h3,
+.pet-health h3 {
+  color: var(--neutral-dark);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.pet-description p {
+  color: var(--neutral-medium);
+  line-height: 1.6;
+}
+
+.temperament-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  background: rgba(74, 144, 217, 0.1);
+  color: var(--primary-color);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.pet-health p {
+  color: var(--neutral-medium);
+}
+
+.pet-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.pet-actions .btn-primary,
+.pet-actions .btn-secondary {
+  padding: 0.8rem 1.5rem;
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+}
+
+.pet-actions .btn-primary {
+  background: var(--primary-color);
+  color: white;
+}
+
+.pet-actions .btn-primary:hover {
+  background: var(--primary-dark);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.pet-actions .btn-secondary {
+  background: var(--neutral-light);
+  color: var(--neutral-dark);
+}
+
+.pet-actions .btn-secondary:hover {
+  background: #e0e0e0;
+  transform: translateY(-2px);
+}
+
+.pet-not-found {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.pet-not-found h2 {
+  color: var(--neutral-dark);
+  margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pet-details-content {
+    grid-template-columns: 1fr;
+  }
+
+  .pet-details-image img {
+    min-height: 250px;
+  }
+
+  .pet-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .pet-quick-info {
+    grid-template-columns: 1fr;
+  }
+
+  .pet-actions {
+    flex-direction: column;
+  }
+
+  .pet-actions .btn-primary,
+  .pet-actions .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+}
